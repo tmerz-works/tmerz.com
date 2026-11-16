@@ -6,7 +6,9 @@
 
 import "./styles.css";
 
-import "./analytics";
+import { scheduleAnalytics } from "./analytics";
+
+scheduleAnalytics();
 
 const canvas = document.getElementById("map") as HTMLCanvasElement;
 const ctx = canvas.getContext("2d", {
